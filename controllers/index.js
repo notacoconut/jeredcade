@@ -4,13 +4,17 @@
  */
 var app = express();
 
-exports.index = function (req, res) {
-  res.render('index', {
-    title: 'jeredcade'
-  });
+app.set('port', (process.env.PORT || 5000));
   app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
 
-  
+exports.index = function (req, res) {
+  res.render('index', {
+    title: 'jeredcade'
+  });
+
+
+
+
 };
