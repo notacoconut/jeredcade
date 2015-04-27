@@ -14,7 +14,7 @@ module.exports = function (grunt) {
         // add your css files over here to concatenate all css files
         // let's save our site users some bandwith
         src: ['public/vendor/bootstrap/dist/css/bootstrap.min.css', 'public/css/styles.min.css'],
-+       dest: 'public/css/app.styles.min.css'
+      dest: 'public/css/app.styles.min.css'
       }
     },
     uglify: {
@@ -25,10 +25,9 @@ module.exports = function (grunt) {
       },
       target: {
         files: {
-+          // add your js files over here to minify them into one javascript source file
-+          'public/js/app.min.js': ['public/vendor/jquery/dist/jquery.min.js', 'public/vendor/bootstrap/dist/js/bootstrap.min.js', 'public/js/main.js']
-+        }
-        }
+       // add your js files over here to minify them into one javascript source file
+         'public/js/app.min.js': ['public/vendor/jquery/dist/jquery.min.js', 'public/vendor/bootstrap/dist/js/bootstrap.min.js', 'public/js/main.js']
+       }
       }
     },
     less: {
