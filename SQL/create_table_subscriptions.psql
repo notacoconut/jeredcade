@@ -1,0 +1,12 @@
+CREATE TABLE subscriptions
+(
+  id serial NOT NULL,
+  email_address text NOT NULL,
+  "timestamp" timestamp without time zone DEFAULT now(),
+  CONSTRAINT subscriptions_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE subscriptions
+  OWNER TO jered;
